@@ -1,0 +1,78 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --flamenco-50: #fef2f2;
+  --flamenco-100: #fee2e2;
+  --flamenco-200: #fecaca;
+  --flamenco-300: #fca5a5;
+  --flamenco-400: #f87171;
+  --flamenco-500: #ef4444;
+  --flamenco-600: #dc2626;
+  --flamenco-700: #b91c1c;
+  --flamenco-800: #991b1b;
+  --flamenco-900: #7f1d1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-flamenco-500 {
+  color: var(--flamenco-500);
+}
+
+.bg-flamenco-500 {
+  background-color: var(--flamenco-500);
+}
+
+.border-flamenco-500 {
+  border-color: var(--flamenco-500);
+}
+
+.hover\:bg-flamenco-600:hover {
+  background-color: var(--flamenco-600);
+}
+
+.hover\:text-flamenco-500:hover {
+  color: var(--flamenco-500);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--flamenco-500);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--flamenco-600);
+}
